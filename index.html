@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maurice Allen · Data &amp; Analytics Engineer</title>
+  <meta name="description" content="Maurice Allen: Data and Analytics Engineer with 8+ years designing scalable data solutions across cloud platforms.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap bar">
+      <a class="mark" href="#top">M.A.</a>
+      <div class="right">
+        <nav aria-label="Sections">
+          <a href="#profile">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#technologies">Technologies</a>
+          <a href="#projects">Projects</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch between light and dark">Dark</button>
+      </div>
+    </div>
+  </header>
+  <script>
+    // Light by default; a visitor who picks dark keeps it on their next visit (stored only in their browser).
+    (function () {
+      var root = document.documentElement, button = document.querySelector(".theme-toggle");
+      function apply(theme) {
+        if (theme === "dark") { root.setAttribute("data-theme", "dark"); } else { root.removeAttribute("data-theme"); }
+        button.textContent = theme === "dark" ? "Light" : "Dark";
+      }
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (e) {}
+      apply(saved === "dark" ? "dark" : "light");
+      button.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        apply(next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+    })();
+  </script>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="label">Data &amp; Analytics Engineer <span class="sep">/</span> 8+ years</p>
+      <h1>Maurice Allen</h1>
+      <p class="lede">Increasing speed-to-insight for strategic decisions: hypotheses into queries, analyses into
+        answers, and metrics into visualizations <em>senior leaders can act on</em>.</p>
+      <p class="actions">
+        <a class="button primary" href="https://www.linkedin.com/in/cmauriceallen">LinkedIn <span aria-hidden="true">→</span></a>
+        <a class="button" href="https://github.com/dontpanicmorty">GitHub <span aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <section id="profile" class="band">
+      <div class="wrap split">
+        <header class="section-head"><span class="num">01</span><h2>Professional profile</h2></header>
+        <div class="prose">
+          <p>I’m a results-driven Data and Analytics Engineer with 8+ years of experience designing scalable data
+            solutions across cloud platforms. With a focus on increasing speed-to-insight for strategic decision making,
+            I’m adept at engaging stakeholders, structuring their business requests to return deliverables within SLA.
+            I translate hypotheses into queries, analyses into answers, and metrics into consumable visualizations for
+            senior leaders and their domains. Proven expertise in managing cost-efficient cloud architecture, pipeline
+            orchestration, and data transformations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="band">
+      <div class="wrap">
+        <header class="section-head"><span class="num">02</span><h2>Experience</h2></header>
+
+        <article class="entry">
+          <div class="when"><span class="dates">Feb 2024 – Present</span><span class="org">Pluralsight</span></div>
+          <div class="what">
+            <h3>Data Analytics Engineer, DataOps – FP&amp;A</h3>
+            <ul>
+              <li>Keep Fivetran and custom pipelines landing data in Snowflake reliable, fresh and scalable, with proactive monitoring, alerting, runbooks and backfills</li>
+              <li>Own the infrastructure behind ingestion and orchestration (compute, deployments, secrets, access and environments), designed for high availability</li>
+              <li>Build, test and document dbt data models that turn raw, disparate source data into clean, trusted datasets for Marketing, Finance, Product, GTM and ML</li>
+              <li>Design conformed dimensions, fact tables and reporting models that balance query performance and maintainability for Tableau and ad-hoc analysis</li>
+              <li>Manage Snowflake RBAC, dynamic data masking and PII classification as code with Terraform, giving people, AI agents and services least-privilege access</li>
+              <li>Partner with stakeholders to translate operational needs into scalable data models and reliable metrics, each documented with clear definitions and lineage</li>
+              <li>Own data quality end to end with testing frameworks and freshness monitoring, trace issues to their root cause, and uphold code review and CI/CD standards</li>
+              <li>Use AI coding assistants and agents daily to speed up model development, test generation, refactoring and documentation, raising the team's throughput</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when"><span class="dates">Feb 2022 – Nov 2023</span><span class="org">InsideTrack</span></div>
+          <div class="what">
+            <h3>Senior Analytics Engineer</h3>
+            <ul>
+              <li>Established technical standards and development best practices across the analytics engineering team to improve consistency, maintainability, and scalability</li>
+              <li>Prioritized analytics engineering initiatives across stakeholders, balancing team capacity, business requirements, and technical debt to support timely delivery</li>
+              <li>Built end-to-end dbt pipelines supporting cross-functional analytics for product, finance, and GTM domains</li>
+              <li>Translated business requirements into reusable models supporting accurate reporting and self-serve analytics</li>
+              <li>Implemented query optimizations and incremental loading patterns reducing warehouse compute costs by 30%</li>
+              <li>Developed data quality tests, freshness checks, and CI/CD workflows improving data reliability and deployment</li>
+              <li>Authored comprehensive dbt documentation incorporating business context, model lineage, and metric definitions to improve data governance, user adoption and education</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when"><span class="dates">Aug 2021 – Feb 2022</span><span class="org">Clearcover</span></div>
+          <div class="what">
+            <h3>Analytics Engineer, Data &amp; Reporting Services</h3>
+            <ul>
+              <li>Onboarded with dbt Core to develop staging and core business models to support a scalable analytics pipeline</li>
+              <li>Translated complex claims insurance data into refactored models and designed dashboards</li>
+              <li>Built and enriched Looker views and models to enable stakeholders with Explores for self-service reporting</li>
+              <li>Gathered requirements, mapped attributes, and aligned metrics to support a codified BI experience</li>
+              <li>Wrote data catalog documentation to clarify ambiguity and improve trust in frequently used datasets</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when"><span class="dates">Nov 2020 – Aug 2021</span><span class="org">Comcast</span></div>
+          <div class="what">
+            <h3>Senior Data Analyst, Business Intelligence</h3>
+            <ul>
+              <li>Delivered 200+ custom reports using Tableau, Looker, and ThoughtSpot</li>
+              <li>Managed reporting for all five lines of business with recurring financial deliverables</li>
+              <li>Analyzed churn, CLV, MRR, and ARPU for Linear, DVR, and Sports portfolios</li>
+              <li>Measured subscriber growth for Amazon, YouTube and Spotify D2C and OTT data services</li>
+              <li>Provided data strategy to support senior leadership’s revenue goal pacing to explore traditionally untapped markets, improve retention and reduce churn</li>
+              <li>Defined GTM analysis to monetize new linear subscriber products and packages</li>
+              <li>Communicated value propositions to stakeholders for alignment across sales channels</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when"><span class="dates">Dec 2018 – Nov 2020</span><span class="org">Comcast</span></div>
+          <div class="what">
+            <h3>Data Analyst, Video &amp; Entertainment, XCS</h3>
+            <ul>
+              <li>Analyzed subscriber trends for retention, value propositions, and product development</li>
+              <li>Delivered ad hoc deep-dive segmentation, data extraction, and analytics requests</li>
+              <li>Surfaced multicultural Video KPIs informing business performance and strategy</li>
+              <li>Maintained monthly recurring and standard reporting for NPS, XLEC, Essbase, H-Tier, and VOD with Excel, Tableau, Looker, and ThoughtSpot business intelligence tools</li>
+              <li>Provided analytical and operational support for enterprise stakeholders</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="technologies" class="band">
+      <div class="wrap">
+        <header class="section-head"><span class="num">03</span><h2>Technologies</h2></header>
+        <div class="cards two">
+          <div class="card">
+            <p class="label">Databases &amp; scripting</p>
+            <ul class="tags"><li>Snowflake</li><li>BigQuery</li><li>PostgreSQL</li><li>MySQL</li><li>SSMS</li><li>Hadoop</li><li>Bash</li><li>Zsh</li></ul>
+          </div>
+          <div class="card">
+            <p class="label">Data infrastructure</p>
+            <ul class="tags"><li>dbt (Core &amp; Cloud)</li><li>GCP</li><li>AWS</li><li>Terraform</li><li>Atlan</li><li>Airflow</li><li>MWAA</li><li>Matillion</li><li>Transcend</li><li>Fivetran</li><li>Stitch</li><li>Git</li><li>GitHub</li><li>GitLab</li><li>Azure Data Factory</li><li>Docker</li><li>CI/CD</li></ul>
+          </div>
+          <div class="card">
+            <p class="label">Analytics &amp; reporting</p>
+            <ul class="tags"><li>Tableau</li><li>Looker</li><li>Power BI</li><li>ThoughtSpot</li><li>Hex</li></ul>
+          </div>
+          <div class="card">
+            <p class="label">Additional competencies</p>
+            <ul class="tags"><li>Agile &amp; Scrum</li><li>Jira &amp; Confluence</li><li>Claude Code</li><li>Prompt Engineering</li><li>Azure DevOps</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="band">
+      <div class="wrap">
+        <header class="section-head"><span class="num">04</span><h2>Projects</h2></header>
+        <p class="section-note">Agentic AI has been used in the creation of these applications.</p>
+        <div class="cards two">
+          <article class="card project">
+            <p class="label">Desktop app <span class="sep">/</span> macOS &amp; Windows</p>
+            <h3><a href="https://github.com/dontpanicmorty/testudines">Testudines <span aria-hidden="true">↗</span></a></h3>
+            <p>A native desktop app for practicing SQL and Python, fully offline. It has 300 SQL exercises graded by
+              DuckDB, and two Python learning paths with lessons, spaced-repetition review cards and exercises graded by
+              real pytest tests. The curriculum is plain files, so it’s easy to extend, and learner code runs with time,
+              memory and output limits so a mistake can’t burden the computer.</p>
+            <ul class="tags small"><li>Python</li><li>Qt (PySide6)</li><li>DuckDB</li><li>pytest</li><li>GitHub Actions</li></ul>
+          </article>
+          <article class="card project">
+            <p class="label">Desktop app <span class="sep">/</span> macOS</p>
+            <h3><a href="https://github.com/dontpanicmorty/jata">Jaṭā <span aria-hidden="true">↗</span></a></h3>
+            <p>An offline password generator, sandboxed with no network access. It controls length, character types and
+              their minimum counts, avoids look-alike characters, rates strength in bits of entropy, clears the clipboard
+              after 30 seconds, and remembers used passwords only as salted hashes so they’re never suggested again.</p>
+            <ul class="tags small"><li>Swift</li><li>SwiftUI</li><li>macOS sandbox</li><li>XCTest</li></ul>
+          </article>
+          <article class="card project">
+            <p class="label">Desktop app <span class="sep">/</span> macOS</p>
+            <h3><a href="https://github.com/dontpanicmorty/melophile">Melophile <span aria-hidden="true">↗</span></a></h3>
+            <p>A music library cleaner for years of mixed iTunes and Music app files. It finds identical copies and,
+              through acoustic fingerprints, the same recording in different formats. It also proposes tag fixes for
+              files and Music app tracks, and converts MP3 and FLAC to M4A with art and tags intact. Every change
+              can be undone, and nothing is ever deleted outright.</p>
+            <ul class="tags small"><li>Python</li><li>Qt (PySide6)</li><li>SQLite</li><li>Chromaprint</li><li>FFmpeg</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap bar">
+      <span>Maurice Allen</span>
+      <span><a href="https://www.linkedin.com/in/cmauriceallen">LinkedIn</a> <span class="sep">/</span> <a href="https://github.com/dontpanicmorty">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>
